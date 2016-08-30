@@ -84,10 +84,11 @@ public class SquareCameraPreview extends SurfaceView {
 
         if (isPortrait) {
             if (width > height * ASPECT_RATIO) {
-                width = (int) (width);
-            } else {
-                height = (int) (width / ASPECT_RATIO + 0.5);
-            }
+//                width = (int) (height / ASPECT_RATIO + 0.5);
+//            } else {
+//                height = (int) (width / ASPECT_RATIO + 0.5);
+//            }
+            height = (int) (width / ASPECT_RATIO + 0.5);
         } else {
             if (height > width * ASPECT_RATIO) {
                 height = (int) (width * ASPECT_RATIO + 0.5);
